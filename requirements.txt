@@ -1,6 +1,6 @@
--jango @ file:///tmp/build/80754af9/django_1601563330930/work
+# -jango @ file:///tmp/build/80754af9/django_1601563330930/work
 absl-py==0.12.0
-asgiref @ file:///tmp/build/80754af9/asgiref_1602513567813/work
+asgiref==3.4.1
 astunparse==1.6.3
 autopep8==1.4.4
 cachetools==4.2.2
@@ -20,7 +20,7 @@ django-countries==5.3.3
 django-crispy-forms==1.7.2
 django-debug-toolbar==1.10.1
 django-extensions==2.1.4
-djangorestframework @ file:///home/conda/feedstock_root/build_artifacts/djangorestframework_1616757768152/work
+djangorestframework==3.11
 gast==0.3.3
 google-auth==1.30.1
 google-auth-oauthlib==0.4.4
@@ -47,7 +47,7 @@ opt-einsum==3.3.0
 pep8==1.7.1
 Pillow==6.0.0
 protobuf==3.17.2
-psycopg2 @ file:///C:/ci/psycopg2_1594303009470/work
+psycopg2==2.9.1
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycodestyle==2.5.0
