@@ -14,6 +14,12 @@ import os, sys, setuptools, tokenize
 
 from django.contrib.messages import constants as messages
 
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -28,6 +34,7 @@ SECRET_KEY = '9!o(m=a+ri2hf7ljr7)stc-%xlyqdxt20wb@=!183e8wd=f-vw'
 DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1','balaclavadetector.herokuapp.com']
+
 
 
 # Application definition
