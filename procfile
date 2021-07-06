@@ -1,1 +1,1 @@
-web: gunicorn VISOR.wsgi --log-file -
+web: gunicorn FaceMask.wsgi --log-file -
