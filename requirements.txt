@@ -12,6 +12,7 @@ chardet==3.0.4
 cssselect==1.1.0
 cssselect2==0.4.1
 cycler==0.10.0
+Cython==0.29.23
 dataclasses>=0.6
 defusedxml==0.6.0
 Django==2.2
