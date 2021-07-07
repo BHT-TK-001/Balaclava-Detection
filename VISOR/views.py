@@ -1,7 +1,7 @@
 from django.shortcuts import render, HttpResponse
 from django.http import StreamingHttpResponse
-from VISOR.face import VideoCamera, IPWebCam, MaskDetect, LiveWebCam
-from VISOR.helmet import VideoCamera, IPWebCam, HelmetDetection, LiveWebCam
+from VISOR.face import VideoCamera, MaskDetect
+from VISOR.helmet import VideoCamera, HelmetDetection
 from VISOR.models import Contact
 from django.contrib import messages
 from datetime import datetime
