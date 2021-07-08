@@ -21,9 +21,9 @@ from django.views.static import serve
 from django.conf.urls import url
 from FaceMask import settings
 
-admin.site.site_header = "Balaclava Admin"
+admin.site.site_header = "Face Mask and Helmet Admin"
 admin.site.site_title = "v Admin Portal"
-admin.site.index_title = "Welcome to Balaclava Admin"
+admin.site.index_title = "Welcome to Face Mask and Helmet Admin"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
