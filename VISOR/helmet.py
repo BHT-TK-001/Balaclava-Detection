@@ -9,15 +9,15 @@ import winsound
 frequency = 500 
 duration = 100
 from django.conf import settings
-face_detection_videocam = cv2.CascadeClassifier(os.path.join(
-			settings.BASE_DIR,'dataset/with_mask'))
-face_detection_webcam = cv2.CascadeClassifier(os.path.join(
-			settings.BASE_DIR,'dataset/without_mask'))
+# face_detection_videocam = cv2.CascadeClassifier(os.path.join(
+# 			settings.BASE_DIR,'dataset/with_mask'))
+# face_detection_webcam = cv2.CascadeClassifier(os.path.join(
+# 			settings.BASE_DIR,'dataset/without_mask'))
 # load our serialized face detector model from disk
 prototxtPath = os.path.sep.join([settings.BASE_DIR, "models/deploy.prototxt"])
 weightsPath = os.path.sep.join([settings.BASE_DIR,"models/res10_300x300_ssd_iter_140000.caffemodel"])
 faceNet = cv2.dnn.readNet(prototxtPath, weightsPath)
-maskNet = load_model(os.path.join(settings.BASE_DIR,'models/helmet_detector.model'))
+maskNet = load_model(os.path.join(settings.BASE_DIR,'models/helmet_detector1.model'))
 
 
 class VideoCamera(object):
@@ -115,7 +115,7 @@ class HelmetDetection(object):
 				# ordering, resize it to 224x224, and preprocess it
 				face = frame[startY:endY, startX:endX]
 				face = cv2.cvtColor(face, cv2.COLOR_BGR2RGB)
-				face = cv2.resize(face, (224, 224))
+				face = cv2.resize(face, (76, 76))
 				face = img_to_array(face)
 				face = preprocess_input(face)
 
