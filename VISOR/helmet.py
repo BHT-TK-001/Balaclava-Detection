@@ -17,7 +17,7 @@ from django.conf import settings
 prototxtPath = os.path.sep.join([settings.BASE_DIR, "models/deploy.prototxt"])
 weightsPath = os.path.sep.join([settings.BASE_DIR,"models/res10_300x300_ssd_iter_140000.caffemodel"])
 faceNet = cv2.dnn.readNet(prototxtPath, weightsPath)
-maskNet = load_model(os.path.join(settings.BASE_DIR,'models/helmet_detector1.model'))
+maskNet = load_model(os.path.join(settings.BASE_DIR,'models/helmet_detector.model'))
 
 
 class VideoCamera(object):
